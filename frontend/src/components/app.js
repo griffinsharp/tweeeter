@@ -8,7 +8,6 @@ import SignupFormContainer from './session/signup_form_container';
 import TweetsContainer from './tweets/tweets_container';
 import ProfileContainer from './profile/profile_container';
 import TweetComposeContainer from './tweets/tweets_compose_container';
-const path = require('path');
 
 const App = () => (
     <div>
