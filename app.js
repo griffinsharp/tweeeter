@@ -8,10 +8,15 @@ const User = require('./models/User');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
+
 mongoose
     .connect(db, { useNewUrlParser: true })
     .then(() => console.log("Connected to MongoDB successfully"))
     .catch(err => console.log(err));
+
+app.get("/", (req, res) => {
+    res.send("Hello World!")
+});
 
 // parser middleware
 // app will also respond to postman, etc.  
