@@ -2,7 +2,7 @@
 
 Twitter-like app created while exploring more into MongoDB, ExpressJS, React/Redux, and NodeJS (MERN) during my time at App Academy. Basic app where users are able to login or create an account, view all tweets on the app, view their own tweets, and create tweets.
 
-The purpose of this project was to learn functionality and how the different parts of the MERN stack interact together to create a full web app in a pure `JavaScript` environment, rather than focusing on styling/UX/UI. 
+The purpose of this project was to learn functionality and how the different parts of the MERN stack interact together to create a full web app in a pure `JavaScript` environment, rather than style/UX/UI. 
 
 ## Features
 
