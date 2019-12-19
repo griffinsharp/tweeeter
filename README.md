@@ -20,12 +20,41 @@ A user is able to both create tweets and view only the tweets they have created.
 
 ## Code Snippets
 
+**Axios Frontend Routing**
 
+<p align="center"> 
+<img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/axios.png">
+</p>
 
+Frontend routing via axios to provide information needed to get all tweets, get a particular user's tweets, and create a tweet.
 
+**Backend Express Routing**
+
+<p align="center"> 
+<img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/express.png">
+</p>
+
+Upon a post request to create a new tweet, first the user's session is authenticated via `passport-jwt`. After this, errors are rendered, if any exist. Then, a new tweet instance is created from the Tweet class. If the tweet is saved correctly to the database, a response of the tweet itself is sent back as json. 
+
+**Example Schema**
+
+Here is a look at my MongoDB Schema for Tweets. Each tweet has values for the user who created it, the text contents, and the time when created. User refers to an instance from the User table. The schema object is created, then passed to `mongoose.model()` to generate the actual tweet table in the database.
+
+<p align="center"> 
+<img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/schema.png">
+</p>
+
+**Tweet Component**
+
+`ComponentWillReceiveProps()` is utilized here to render a new tweet back to the user below the create tweet form after it is submitted.
+
+<p align="center"> 
+<img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/tweetcomp.png">
+</p>
 
 ## Technologies Used
 
+- `JavaScript`
 - `React` 
 - `Redux` 
 - `Express.js` 
