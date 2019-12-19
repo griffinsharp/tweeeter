@@ -4,7 +4,7 @@ const passport = require("passport");
 const validateTweetInput = require("../../validation/tweets");
 const Tweet = require("../../models/Tweet");
 
-router.get("test", (req, res) => {
+router.get("/test", (req, res) => {
     res.json({msg: "This is the tweet route"});
 });
 
@@ -42,7 +42,7 @@ router.get("/", (req, res) => {
 });
 
 // GET ROUTE (for specific user)
-router.get("/user/:user_id", (req, res) => { 
+router.get("/user/:user_id", (req, res) => {  
     Tweet
     .find({user: req.params.user_id})
     .then(tweets => res.json(tweets))
