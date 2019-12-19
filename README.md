@@ -22,19 +22,19 @@ A user is able to both create tweets and view only the tweets they have created.
 
 **Axios Frontend Routing**
 
+Frontend routing via axios to provide information needed to get all tweets, get a particular user's tweets, and create a tweet.
+
 <p align="center"> 
 <img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/axios.png">
 </p>
 
-Frontend routing via axios to provide information needed to get all tweets, get a particular user's tweets, and create a tweet.
-
 **Backend Express Routing**
+
+Upon a post request to create a new tweet, first the user's session is authenticated via `passport-jwt`. After this, errors are rendered, if any exist. Then, a new tweet instance is created from the Tweet class. If the tweet is saved correctly to the database, a response of the tweet itself is sent back as json. 
 
 <p align="center"> 
 <img src="https://github.com/griffinsharp/MernTweeter/blob/master/images/express.png">
 </p>
-
-Upon a post request to create a new tweet, first the user's session is authenticated via `passport-jwt`. After this, errors are rendered, if any exist. Then, a new tweet instance is created from the Tweet class. If the tweet is saved correctly to the database, a response of the tweet itself is sent back as json. 
 
 **Example Schema**
 
